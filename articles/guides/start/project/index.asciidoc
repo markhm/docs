@@ -1,0 +1,50 @@
+---
+title: Starting a Project
+layout: tabbed-page
+tab-title: Overview
+order: 20
+---
+
+= Starting a Project
+
+Once you’ve installed the required development tools on your computer, you can start a new Vaadin project.
+
+
+[.cards.quiet.large]
+== Create a Project
+
+[.breakout]
+The easiest way to create a Vaadin project is to use the Project Wizard.
+You can also create a new project using a <<maven-archetype#,Maven Archetype>>.
+
+[.card.wide]
+=== Project Wizard
+Configure and download a new application project at start.vaadin.com
+https://start.vaadin.com[Go to start.vaadin.com^]
+
+
+[.cards.quiet.large]
+== Import and Run a Project
+
+[.breakout]
+After downloading a project from the Project Wizard, follow the instructions for your preferred IDE how to import and run the project.
+
+[.card]
+=== Eclipse
+Learn how to import and run a project in Eclipse
+<<eclipse#,See instructions for Eclipse>>
+
+[.card]
+=== IntelliJ IDEA
+Learn how to import and run a project in IntelliJ IDEA
+<<intellij-idea#,See instructions for IntelliJ IDEA>>
+
+[.card]
+=== NetBeans
+Learn how to import and run a project in NetBeans
+<<netbeans#,See instructions for NetBeans>>
+
+[.card]
+=== VS Code
+Learn how to import and run a project in VS Code
+<<vscode#,See instructions for VS Code>>

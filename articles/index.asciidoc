@@ -20,10 +20,10 @@ pass:[<!-- vale Vaadin.HeadingFormatting = NO -->]
 == Sections
 
 [.card]
-=== Beginner's Guide
-image::_images/flow.svg[opts=inline, role=icon]
+=== Guides
+image::_images/guides.svg[opts=inline, role=icon]
 Introduction to Vaadin Platform and how to set up, create a project, and deploy it.
-<<guide/overview#,See Framework>>
+<<guides/overview#,See Framework>>
 
 [.card]
 === Flow

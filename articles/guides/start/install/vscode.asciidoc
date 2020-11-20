@@ -1,0 +1,9 @@
+---
+title: VS Code Extension
+order: 60
+---
+
+[[installing.eclipse]]
+= Installing the Vaadin Extension for VS Code
+
+TODO

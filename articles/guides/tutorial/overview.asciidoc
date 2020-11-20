@@ -1,0 +1,30 @@
+---
+title: Overview
+order: 5
+---
+
+= Building a Modern Web App with Spring Boot and Vaadin
+
+In this tutorial, you'll learn to build a full-stack web application in Java.
+We’ll cover the entire Java web application development process, from setup to deployment.
+Each chapter includes a step-by-step video guide to help you learn hands-on.
+You can find the source code for each chapter in GitHub.
+
+The guide is specifically designed as a practical introduction to modern web application development using Java.
+It focuses on real-world developer needs, without diving too deeply into theory or academics.
+
+At the end, you have developed a Customer Relationship Management (CRM) system for managing contacts. https://crm.demo.vaadin.com/[Try the completed app]
+
+[.fullbleed]
+image::Vaadin-CRM.webp[]
+
+The application features:
+
+- A login screen to restrict access.
+- A responsive layout with side navigation that works on desktop and mobile.
+- A database for persistent data storage.
+- A list view that can be sorted and filtered.
+- A form to edit and add contacts.
+- A dashboard view with charts.
+- Cloud deployment to AWS.
+- User installation to desktop and mobile.
