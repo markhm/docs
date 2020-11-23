@@ -37,15 +37,16 @@ Install development tools in Linux
 You need at least the following tools during application development:
 
 * **Java JDK** version 8 or newer
-* **Maven** version 3 or newer, or Gradle version 5.6 or newer
+* **Maven** version 3 or newer
 
-While Java 8 is supported, Java 11 is recommended (the latest LTS version) or later, but you need to make sure that your entire toolchain supports it.
+While Java 8 is supported, Java 11 is recommended (the latest Long-Term Supported (LTS) version) or later, but you need to make sure that your entire toolchain supports it.
 
 Optionally, you can use:
 
+* Gradle instead of Maven (version 5.6 or newer)
 * A Java IDE (Eclipse EE, NetBeans IDE, IntelliJ IDEA, VS Code, etc.)
 * A front-end IDE such as VS Code, WebStorm, or Atom
-* An external Java Servlet Container (Tomcat, TomEE, JBoss, WildFly, Glassfish, etc)
+* An external Java Servlet Container (Tomcat, TomEE, JBoss, WildFly, GlassFish, etc)
 
 For a particular version of the Vaadin, please see the release notes for a more comprehensive list of requirements.
 
