@@ -25,7 +25,7 @@ On the Java side, Live Reload requires recompiling the code modifications and pa
 Vaadin Live Reload integrates with Spring Boot developer tools (available out of the box for Spring Boot-based Vaadin applications), JRebel (commercial tool for any Vaadin application) and HotswapAgent (open-source tool for any Vaadin application).
 See the corresponding sections for setting up the desired technology:
 
-** <<live-reload/springboot#, Spring Boot Developer tools>>
+** <<live-reload#, Spring Boot Developer tools>>
 ** <<live-reload/jrebel#, JRebel>>
 ** <<live-reload/hotswapagent#, HotswapAgent>>
 
@@ -52,5 +52,5 @@ As an alternative to using Maven plugins for starting a stopping the development
 IDE server integration tools (available for most major servers) allow using the IDE UI for the same purpose.
 Below IDE specific information on how to ensure the `prepare-frontend` Maven goal gets executed automatically for the frontend build setup in this case.
 
-** <<run-on-server/intellij-idea#,IntellJ IDEA Ultimate Edition>>
+** <<run-on-server#,IntellJ IDEA Ultimate Edition>>
 ** <<run-on-server/eclipse#,Eclipse>>
