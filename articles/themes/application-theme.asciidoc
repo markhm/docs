@@ -46,6 +46,42 @@ See <<styling-applications#, Styling Applications>>.
 
 NOTE: Global styles can override <<theme-variants#global-variants, global variants>> styles. For example, `Lumo.DARK` variant defines a `--lumo-base-color` which can be overridden by `global.css` file.
 
+=== Theme Configuration	
+
+==== Assets	
+
+Assets like fonts and images from an npm dependency can be used in the theme after mapping them from the dependency to local URIs, by adding an `assets` block in `theme.json`.	
+
+[source, JSON]	
+----	
+"assets": {	
+  "@foo/bar": {	
+    "images/**": "foobar/images"	
+  }	
+}	
+----	
+
+A style sheet in the theme can use the assets using the local path defined in `theme.json`.	
+
+[source, CSS]	
+----	
+background-image: url('foobar/images/logo.svg');	
+----	
+
+==== Extend an Application Theme	
+
+An application theme can extend another one by adding a `parent` property to theme.json.	
+The parent theme must be available within the application's `frontend/theme` folder or in a JAR dependency.	
+The child theme can override any CSS file from the parent one by having the same file name.	
+
+For example, to extend a theme called "acme-base":	
+[source, JSON]	
+----	
+{	
+  "parent": "acme-base"	
+}	
+----
+
 ==== Use at-rules for Components in non-Vaadin Applications
 
 To make at-rules work for components embedded into non-Vaadin applications (for example <<../flow/embedding-flow-applications/tutorial-webcomponent-intro#, WebComponentExporter>>), add a file called `document.css` to the theme folder, and write at-rules there.
