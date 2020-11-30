@@ -1,6 +1,7 @@
 const { execSync } = require('child_process');
 const path = require('path');
 const NodeGit = require('nodegit');
+const fs   = require('fs-extra');
 
 if (!process.env.GITHUB_TOKEN) {
   console.error('GITHUB_TOKEN not provided as an environment property');
@@ -21,27 +22,25 @@ const opts = {
   }
 };
 
+// Cleanup
+fs.rmdirSync(localPath, { recursive: true });
+
 console.info('Cloning docs-app...');
 
 const clonePromise = new Promise((resolve, reject) => {
   const clone = NodeGit.Clone(url, localPath, opts);
   clone.catch((e) => {
-    // Most probably already cloned
-    resolve();
+    reject(e);
   }).then(() => {
-    // console.info(`Finished cloning ${repoName} (${branch})`);
     resolve();
   });
 });
 
 clonePromise.then(() => {
-  // console.log('Finished cloning docs-app');
-
   console.log('Installing docs-app dependencies...');
   execSync('npm i', { cwd: './docs-app', stdio: 'inherit' });
 
   console.log('Prepare content...');
-  execSync('./scripts/mvnw -v', { cwd: '../', stdio: 'inherit' });
   execSync('./scripts/mvnw compile vaadin:prepare-frontend vaadin:build-frontend', { cwd: '../', stdio: 'inherit' });
 
   console.log('Building documentation site...');
