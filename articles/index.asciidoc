@@ -5,6 +5,14 @@ layout: index
 page-links: https://github.com/vaadin/platform/releases/tag/{moduleMavenVersion:com.vaadin:vaadin}[{moduleMavenVersion:com.vaadin:vaadin}]
 ---
 
+++++
+<style>
+nav[aria-label="breadcrumb"] {
+  display: none;
+}
+</style>
+++++
+
 = Vaadin Docs
 
 Vaadin is an open-source platform for building progressive web applications (PWAs).
